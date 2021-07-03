@@ -20,43 +20,43 @@
 
 
 
-function Storage(items) {
-    this.items = items;
-}
-
-Storage.prototype.getItems = function () {
-    return this.items;
-}
-
-Storage.prototype.addItem = function (newItem) {
-   return this.items.push(newItem);
-}
-
-Storage.prototype.removeItem = function (item) {
-    for (let i = 0; i < this.items.length; i + 1) {
-        if (this.items[i] === item) {
-            return this.items.splice(i, 1);
-        }
-    }
-}
-
-
 // function Storage(items) {
-//   this.items = items;
+//     this.items = items;
 // }
+
 // Storage.prototype.getItems = function () {
-//   return this.items;
-// };
+//     return this.items;
+// }
+
 // Storage.prototype.addItem = function (newItem) {
-//   return this.items.push(newItem);
-// };
+//    return this.items.push(newItem);
+// }
+
 // Storage.prototype.removeItem = function (item) {
-//   for (let i = 0; i < this.items.length; i++) {
-//     if (this.items[i] === item) {
-//       return this.items.splice(i, 1);
+//     for (let i = 0; i < this.items.length; i + 1) {
+//         if (this.items[i] === item) {
+//             return this.items.splice(i, 1);
+//         }
 //     }
-//   }
-// };
+// }
+
+
+function Storage(items) {
+  this.items = items;
+}
+Storage.prototype.getItems = function () {
+  return this.items;
+};
+Storage.prototype.addItem = function (newItem) {
+  return this.items.push(newItem);
+};
+Storage.prototype.removeItem = function (item) {
+  for (let i = 0; i < this.items.length; i++) {
+    if (this.items[i] === item) {
+      return this.items.splice(i, 1);
+    }
+  }
+};
 
 
 const storage = new Storage(['Нанитоиды', 'Пролонгер', 'Антигравитатор']);
