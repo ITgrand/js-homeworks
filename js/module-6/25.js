@@ -8,8 +8,7 @@
     friends: ['Sharron Pace'],
     isActive: false,
     balance: 2811,
-    gender: 'male',
-    age: 37
+    gender: 'male'
   },
   {
     name: 'Sharlene Bush',
@@ -18,8 +17,7 @@
     friends: ['Briana Decker', 'Sharron Pace'],
     isActive: true,
     balance: 3821,
-    gender: 'female',
-    age: 34
+    gender: 'female'
   },
   {
     name: 'Ross Vazquez',
@@ -28,8 +26,7 @@
     friends: ['Marilyn Mcintosh', 'Padilla Garrison', 'Naomi Buckner'],
     isActive: false,
     balance: 3793,
-    gender: 'male',
-    age: 24
+    gender: 'male'
   },
   {
     name: 'Elma Head',
@@ -38,8 +35,7 @@
     friends: ['Goldie Gentry', 'Aisha Tran'],
     isActive: true,
     balance: 2278,
-    gender: 'female',
-    age: 21
+    gender: 'female'
   },
   {
     name: 'Carey Barr',
@@ -48,8 +44,7 @@
     friends: ['Jordan Sampson', 'Eddie Strong'],
     isActive: true,
     balance: 3951,
-    gender: 'male',
-    age: 27
+    gender: 'male'
   },
   {
     name: 'Blackburn Dotson',
@@ -58,8 +53,7 @@
     friends: ['Jacklyn Lucas', 'Linda Chapman'],
     isActive: false,
     balance: 1498,
-    gender: 'male',
-    age: 38
+    gender: 'male'
   },
   {
     name: 'Sheree Anthony',
@@ -68,25 +62,22 @@
     friends: ['Goldie Gentry', 'Briana Decker'],
     isActive: true,
     balance: 2764,
-    gender: 'female',
-    age: 39
+    gender: 'female'
   }
 ]
 
 
-// Дополни функцию getUsersWithAge(users, minAge, maxAge) так, чтобы она возвращала массив пользователей, возраст которых(свойство age) попадает в промежуток от minAge до maxAge.
+
+// Дополни функцию getUserWithEmail(users, email) так, чтобы она возвращала объект пользователя, почта которого (свойство email) совпадает со значением параметра email.
 
 // // Пиши код ниже этой строки
-// const getUsersWithAge = (users, minAge, maxAge) => {
- 
-
+// const getUserWithEmail = (users, email) => {
+   
 // };
 // // Пиши код выше этой строки
 
 // Пиши код ниже этой строки
-const getUsersWithAge = (users, minAge, maxAge) => {
-    return users.filter(user => user.age >= minAge && user.age <= maxAge);
- 
+const getUserWithEmail = (users, email) => {
+    return users.find(user => user.email.includes(email));
 };
 // Пиши код выше этой строки
-
